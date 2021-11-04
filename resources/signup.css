@@ -1,0 +1,22 @@
+.form-container {
+    max-width: 600
+px
+;
+    width: 60%;
+    border-radius: 20
+px
+;
+    margin: auto;
+
+    background-color: rgba(222, 222, 222, 0.719);
+    box-shadow: 0px 0px 165px 50px rgb(100 100 100 / 85%) inset;
+    -webkit-box-shadow: 0px 0px 165px 30px rgb(100 100 100 / 85%) inset;
+    -moz-box-shadow: 0px 0px 165px 30px rgba(100,100,100,0.85) inset;
+    padding: 30
+px
+;
+    padding-left: 40
+px
+;
+    color: white;
+}
