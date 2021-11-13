@@ -11,8 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link href="resources/signup.css" rel="stylesheet">
+        <link href="./resources/bootstrap.min.css" rel="stylesheet">
+        <link href="resources/style.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href=""> -->
     </head>
     <body>
@@ -20,35 +20,48 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div style="background-image: url('images/signup_bg.webp');" class="img-fluid">
-        <section>
+          <header>
+            <nav class="navbar navbar-expand-md">
+              <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" class="logo">
+              </a>
+              </div>
+            </nav>
+          </header>
             <div class="container-fluid">
-              <div>
-                <div>
-                  <div>
-                    <div>
                       <div>
-                        <h2 class="text-center">CREATE AN ACCOUNT</h2>
+                        <!-- <h2 class="text-center card-header">Sign Up</h2> -->
           
-                        <form class="form-container" >
+                        <!-- <form class="form-container form-floating" > -->
+                        <form class="form-container">
+                          <h2 class="form_h2">Sign Up</h2>
           
-                          <div class="align-content-center">
-                            <label class="form-label col-lg-2 control-label" for="form3Example1cg" style="margin: 1.5em;">Your Name</label>
-                            <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                          <div class="form-outline">
+                            <label class="form-label col-form-label-lg form_lbl">Your Name</label>
+                            <input type="text"  placeholder="First-name Last-name" class="bg-transparent form_input"/>
+                            <small>Error Msg</small>
                           </div>
           
-                          <div>
-                            <label class="form-label" for="form3Examplecg" style="margin: 1.5em;">Your Email</label>
-                            <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                          <div class="form-outline">
+                            <label class="form-label col-form-label-lg form_lbl">Your Email</label>
+                            <input type="email" placeholder="eg. : someone@gmail.com" class="bg-transparent form_input"/>
+                            <label id="emailHelp" class="col-form-label-sm">We'll never share your email with anyone</label>
                           </div>
           
-                          <div>
-                            <label class="form-label" for="form3Example4cg" style="margin: 1.5em;">Password</label>
-                            <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                          <div class="form-outline">
+                            <label class="form-label col-form-label-lg form_lbl">Your Mobile-number</label>
+                            <input type="tel" placeholder="10-digit mobile number" class="bg-transparent form_input"/>
+                          </div>
+
+                          <div class="form-outline">
+                            <label class="form-label col-form-label-lg form_lbl">Password</label>
+                            <input type="password" class="bg-transparent form_input"/>
                           </div>
           
-                          <div>
-                            <label class="form-label" for="form3Example4cdg" style="margin: 1.5em;">Repeat your password</label>
-                            <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                          <div class="form-outline">
+                            <label class="form-label col-form-label-lg form_lbl">Repeat your password</label>
+                            <input type="password" class="bg-transparent form_input"/>
                           </div>
           
                           <div>
@@ -62,25 +75,17 @@
                               I agree all statements in <a href="#!"><u>Terms of service</u></a>
                             </label>
                           </div>
-          
                           <div>
                             <button type="button" class="btn btn-lg btn-primary">Register</button>
                           </div>
-          
-                          <p>Already have an account? <a href="#!">
-                            <button type="button" class="btn btn-md btn-primary">Login</button>
+                          <p>Already have an account? <a href="./login.html">
+                            <button type="button" class="btn btn-md btn-secondary">Login</button>
                           </a>
-                            <!-- <u>Login here</u></a></p> -->
-          
                         </form>
           
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
-          </section>
           <br>
           <br>
           <br>
@@ -91,6 +96,13 @@
           <br>
 
         </div>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <footer class="page-footer">
+          <br>
+          <div>
+          <p>This Web-page was created by Raghuram Balakrishnan for ICTKerala as part of the Full Stack Development in MERN course - November 2021. For complete Source Code: 
+          <a href="https://github.com/ramraghu/FSD_Assignment_01/">GitHub</a></p>
+        </div>  
+        </footer>
+        <script src="./resources/scripts/bootstrap.bundle.min.js"></script>      
     </body>
 </html>

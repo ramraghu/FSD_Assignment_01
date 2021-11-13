@@ -2,11 +2,11 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+/* body {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     color: #5a5a5a;
-  }
+  } */
   
   /* logo size */ 
   .logo {
@@ -16,6 +16,38 @@ body {
     margin-top: 5px;
   }
   
+.imageContainer {
+  position:relative; 
+  height: 15em;
+  width:25em;
+  padding:1em;
+
+}
+
+/* Placing an absolute position css class over a relative positioned container will help */
+
+.imageCaption { 
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Courier New', Courier, monospace;
+  color:white;
+  font-size:x-large;
+
+}
+
+.page-footer {
+  width: 100%;
+  background-color: #707b7c;
+  padding: 60px 0px;
+  color: #fff;
+  text-align: center;
+  position:relative;bottom:0;left:0;right:0;height:120px;
+  
+}
+
+
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
@@ -41,6 +73,13 @@ body {
     height: 42rem;
   }
   
+  .card { 
+
+    position:relative; 
+    display: flex;
+    flex-direction: column;
+    border-radius:0.25em; 
+  }
   
   /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -60,6 +99,38 @@ body {
   }
   /* rtl:end:ignore */
   
+  /* ################################## Form Body Design ################################################ */
+.form-container {
+	
+  max-width: 600px;
+  width: 100%;
+  border-radius: 20px;
+  margin: 50px auto;
+  background-color: rgba(34, 36, 37, 0.719);
+  box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
+  -webkit-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
+  -moz-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
+  padding: 30px;
+padding-left: 40px;
+  color: white;
+
+}
+.form_h2 {
+margin-top: 10px;
+  text-align: center;
+}
+
+.form_lbl {
+  max-width: 200px;
+  width:100%;
+
+}
+
+.form_input {
+  max-width: 300px;
+  width:100%;
+}
+
   
   /* Featurettes
   ------------------------- */
@@ -98,3 +169,4 @@ body {
       margin-top: 7rem;
     }
   }
+
